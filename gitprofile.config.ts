@@ -11,13 +11,15 @@ const CONFIG = {
       header: 'Github Projects',
       mode: 'automatic', 
       automatic: {
-        sortBy: 'updated', 
-        limit: 50, // High limit to show all public repositories
-        exclude: {
-          forks: false, // Display all repos including forks
-          projects: [], 
-        },
+      sortBy: 'updated', 
+      limit: 50,
+      exclude: {
+        forks: false, 
+        projects: [
+          'JFrusher/JFrusher.github.io', 
+        ], 
       },
+    },
       manual: {
         projects: [], 
       },
